@@ -17,7 +17,7 @@ Installation:
 2. Copy the following files in this new folder:
     * Parchemin.swf
     * xml/
-    * Yseult_Parchemin.dm
+    * Sabotaz_Parchemin.dm
 3. Launch Dofus
 4. Enable the module in your config menu.
 5. ...
