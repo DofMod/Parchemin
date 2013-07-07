@@ -1,0 +1,4 @@
+*.swf
+*.as3proj
+*.lxml
+obj/

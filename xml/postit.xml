@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Definition SYSTEM "../dtd/ui.dtd">
+<Definition usePropertiesCache="false">
+	
+	<Import url="[config.mod.template]button/simpleButton.xml" />
+	<Import url="[config.mod.template]button/iconButton.xml" />
+	
+	<Constants>
+		<Constant name="assets" value="[config.ui.skin]assets.swf|" />
+		<Constant name="css" value="[config.ui.skin]css/" />
+	</Constants>
+	
+	<Container>
+		<mouseEnabled>true</mouseEnabled>
+		<Anchors>
+			<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMLEFT">
+				<AbsDimension x="0" y="1" />
+			</Anchor>
+		</Anchors>
+		<Container name="postitCtr">
+			<Size>
+				<AbsDimension x="532" y="138" />
+			</Size>
+			<visible>false</visible>
+
+			<!-- Textures background-->
+			<Texture name="tx_fond1">
+				<Anchors>
+					<Anchor>
+						<AbsDimension x="0" y="2" />
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="495" y="136" />
+				</Size>
+				<uri>[local.assets]tchat_tx_cacheMisere</uri>
+			</Texture>
+
+			<Texture name="tx_fond2">
+				<Anchors>
+					<Anchor>
+						<AbsDimension x="0" y="2" />
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="495" y="136" />
+				</Size>
+				<uri>[local.assets]tchat_tx_cacheMisere</uri>
+			</Texture>
+
+			<!-- Texture tx_focus-->
+
+			<Texture name="tx_focus">
+				<Anchors>
+					<Anchor>
+						<AbsDimension x="20" y="142" />
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="509" y="21" />
+				</Size>
+			</Texture>
+			
+			
+			<!-- TextArea textarea_postit-->
+
+			<TextArea name="textarea_postit">
+				<Anchors>
+					<Anchor>
+						<AbsDimension x="2" y="-1" />
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="488" y="113" />
+				</Size>			
+				<scrollCss>[local.css]scrollBar.css</scrollCss>
+				<scrollPos>-7</scrollPos>	
+				<scrollTopMargin>5</scrollTopMargin>	
+				<css>[local.css]chat.css</css>
+				<selectable>true</selectable>
+				<useEmbedFonts>false</useEmbedFonts>
+				<hyperlinkEnabled>true</hyperlinkEnabled>
+			</TextArea>
+
+			<!-- Input input_postit-->
+
+			<Input name="input_postit">
+				<Anchors>
+					<Anchor relativePoint="BOTTOMLEFT">
+						<AbsDimension x="15" y="-25" />
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="465" y="26" />
+				</Size>
+				<css>[local.css]chat.css</css>
+				<cssClass>p0</cssClass>
+				<multiline>false</multiline>
+			</Input>
+			
+			<iconButton name="btn_menu_postit">
+				<Anchors>
+					<Anchor relativePoint="BOTTOMLEFT">
+						<AbsDimension x="0" y="-24" />
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="23" y="22" />
+				</Size>
+				<uri>[local.assets]tchat_btn_menu</uri>
+				<Hooks>
+					<onRelease/>
+				</Hooks>
+			</iconButton>
+			
+			<Label name="label_save">
+				<Anchors>
+					<Anchor relativePoint="BOTTOMLEFT">
+						<AbsDimension x="465" y="-27" />
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="50" y="20" />
+				</Size>
+				<css>[local.css]normal.css</css>
+				<cssClass>center</cssClass>
+			</Label>
+			
+		</Container>
+
+		<!-- Button btn_postit -->
+			
+		<iconButton name="btn_postit">
+			<Anchors>
+				<Anchor relativePoint="BOTTOMLEFT">
+					<AbsDimension x="505" y="-26" />
+				</Anchor>
+			</Anchors>
+			<Size>
+				<AbsDimension x="26" y="27" />
+			</Size>
+			<visible>true</visible>
+			<uri>[local.assets]btn_mp</uri>
+			<Hooks>
+				<onRelease/>
+			</Hooks>
+		</iconButton>
+		
+	</Container>
+</Definition>
+
